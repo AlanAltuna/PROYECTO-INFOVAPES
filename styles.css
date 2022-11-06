@@ -1,17 +1,15 @@
 
 * {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 header {
     width: 100%;
     height: 600px;
-  ;
+  
 }
 
-header > video {
-position: absolute;
-z-index: -1;
-}
+
 
 nav {
     width: 100%;
@@ -20,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .logo {
@@ -54,18 +52,83 @@ nav > .listaNav ul {
 nav > .listaNav > ul > li {
     height: 100px;
     width: calc(100%/4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 30px; 
 }
 
-main {
+.main {
     width: 100%;
-    height: 1000px;
+    height: 900px;
+   opacity: 0.9;
+}
+
+section {
+    margin: 0px 10px 0px 10px;
+    z-index: 2;
+    color: white;
+}
+
+body {
     background-color: black;
-    margin: 0px;
-    padding:0px;
-    
+    opacity: 0.5;
+}
+
+
+
+a {
+    text-decoration: none;
+    color:white;  
+}
+
+
+
+.listaNav > ul > li > a:hover {
+    cursor:pointer;
+color: #005ccc;
+transition: all 2s;
+}
+
+.listaNav > ul > li:hover {
+    cursor:pointer;
+color: #005ccc;
+transition: all 2s;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 20px;
+  position: relative;
+  visibility: hidden;
+  z-index: 2;
+  top: 5px;
+}
+
+.submenu > li {
+    width: 250px;
+    height: 50px;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+}
+
+.sub:hover > .submenu {
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 0.8;
+    border-top: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.derechos {
+    padding: 75px 20px 0px 0px;
 }
