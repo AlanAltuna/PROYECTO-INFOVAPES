@@ -131,4 +131,20 @@ footer {
 
 .derechos {
     padding: 75px 20px 0px 0px;
+
+}
+
+.iconos {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 25px;
+    left: 560px;
+    font-size: 30px;
+}
+
+.iconos:hover {
+    cursor: pointer;
 }
