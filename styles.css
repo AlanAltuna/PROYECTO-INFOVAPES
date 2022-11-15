@@ -203,12 +203,36 @@ align-items: center;
     visibility: hidden;
 }
 
-.main4 {
-    color: white;
-    width: 500px;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
+#checkk {
+    visibility: hidden;
+}
+
+
+.fdos {
+    height: 40px;
+    width: 400px;
+}
+
+.ftres {
+    height: 200px;
+width: 400px;
+}
+
+.form1 {
+    width: 400px;
+    height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.formulario {
+width: 100%;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -229,6 +253,7 @@ align-items: center;
     position: absolute;
     left: 250px;
     top: 110px;
+    visibility: hidden;
    }
    .listaNav {
     padding-top: 5px;
@@ -237,4 +262,13 @@ align-items: center;
    #check:checked ~ .listaNav {
 visibility: visible;
    }
+
+   .sub > .submenu {
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+
+
+
 }
